@@ -4,7 +4,7 @@ const Hero = () => {
   return (
     <section className="bg-green-50 text-center py-20 px-4 md:px-8">
       <div className="max-w-3xl mx-auto">
-        <p className="text-xs md:text-sm text-gray-600 mb-3">1 in 3 people die of heart attack, make sure you don't.</p>
+        <p className="text-xs md:text-sm text-gray-600 mb-3">1 in 3 people die of heart attack, make sure you don&apos;t.</p>
         <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4 text-gray-800 leading-tight">
           Manage your risks for heart attack
         </h1>
