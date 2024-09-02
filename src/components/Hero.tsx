@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 
 const Hero = () => {
   return (
@@ -11,9 +12,11 @@ const Hero = () => {
         <p className="text-sm md:text-base lg:text-lg mb-8 text-gray-700 max-w-2xl mx-auto">
           High cholesterol, hypertension are key risk factors for heart attacks. Reverse your markers now to reduce your risk of heart attack.
         </p>
-        <button className="bg-green-500 hover:bg-green-600 text-white font-semibold px-6 py-2.5 rounded-full text-sm md:text-base transition duration-300 ease-in-out transform hover:scale-105">
-          Join Waitlist
-        </button>
+        <Link href="https://tally.so/r/w8KYWo" target="_blank" rel="noopener noreferrer">
+          <button className="bg-green-500 hover:bg-green-600 text-white font-semibold px-6 py-2.5 rounded-full text-sm md:text-base transition duration-300 ease-in-out transform hover:scale-105">
+            Join Waitlist
+          </button>
+        </Link>
       </div>
     </section>
   );

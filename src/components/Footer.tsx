@@ -9,14 +9,14 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div>
             <Image src={logo} alt="Surge Health" width={150} height={40} objectFit="contain" />
-            <p className="text-sm text-gray-600 mt-2">contact@surgehealth.com</p>
+            <p className="text-sm text-gray-600 mt-2">contact@surge.health</p>
           </div>
           <div>
             <h3 className="font-semibold text-gray-800 mb-3">Quick Links</h3>
             <ul className="space-y-2">
               <li><a href="#" className="text-sm text-gray-600 hover:text-gray-800">About</a></li>
-              <li><a href="#" className="text-sm text-gray-600 hover:text-gray-800">Career</a></li>
-              <li><a href="#" className="text-sm text-gray-600 hover:text-gray-800">Contact</a></li>
+              <li><a href="mailto:contact@surge.health" className="text-sm text-gray-600 hover:text-gray-800">Career</a></li>
+              <li><a href="mailto:contact@surge.health" className="text-sm text-gray-600 hover:text-gray-800">Contact</a></li>
             </ul>
           </div>
           <div>
@@ -37,7 +37,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="mt-8 pt-8 border-t border-gray-200 text-center text-sm text-gray-600">
-          © 2024 Insight Software Private Limited. All rights reserved.
+          © 2024 Trackfit Software Private Limited. All rights reserved.
         </div>
       </div>
     </footer>
