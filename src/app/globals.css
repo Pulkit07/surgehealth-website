@@ -2,10 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
+  --primary-green: #22c55e;
+  --light-green: #f0fdf4;
+  --text-dark: #1f2937;
+  --text-light: #4b5563;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -17,7 +23,9 @@
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
+  font-family: 'Inter', sans-serif;
+  color: var(--text-dark);
+  line-height: 1.5;
   background: linear-gradient(
       to bottom,
       transparent,
@@ -31,3 +39,32 @@ body {
     text-wrap: balance;
   }
 }
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+button {
+  font-weight: 600;
+}
+
+.bg-primary-green {
+  background-color: var(--primary-green);
+}
+
+.bg-light-green {
+  background-color: var(--light-green);
+}
+
+.text-primary-green {
+  color: var(--primary-green);
+}
+
+/* Add any additional global styles here */
