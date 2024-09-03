@@ -10,26 +10,27 @@ const Features = () => {
   ];
 
   return (
-    <section className="py-20 px-4 md:px-6 lg:px-8 bg-white">
+    <section className="py-12 sm:py-16 md:py-20 px-4 sm:px-6 lg:px-8 bg-white">
       <div className="max-w-[1200px] mx-auto">
-        <h2 className="text-3xl md:text-4xl font-semibold text-center mb-16 text-gray-800">
-          Early detection is best bet for <br />
+        <h2 className="text-2xl sm:text-3xl md:text-4xl font-semibold text-center mb-8 sm:mb-12 md:mb-16 text-gray-800">
+          Early detection is best bet for{' '}
           <span className="text-primary-green">preventing heart attacks</span>
         </h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
           {features.map((feature, index) => (
-            <div key={index} className="text-center p-6">
-              <div className="mb-6 flex justify-center items-center h-20">
+            <div key={index} className="text-center p-4 sm:p-6">
+              <div className="mb-4 sm:mb-6 flex justify-center items-center h-16 sm:h-20">
                 <Image 
                   src={feature.icon} 
                   alt={feature.title} 
-                  width={48} 
-                  height={48} 
+                  width={40}
+                  height={40}
+                  className="w-10 h-10 sm:w-12 sm:h-12"
                   objectFit="contain"
                 />
               </div>
-              <h3 className="font-semibold mb-4 text-xl text-gray-800">{feature.title}</h3>
-              <p className="text-base text-gray-600 leading-relaxed">{feature.description}</p>
+              <h3 className="font-semibold mb-2 sm:mb-4 text-lg sm:text-xl text-gray-800">{feature.title}</h3>
+              <p className="text-sm sm:text-base text-gray-600 leading-relaxed">{feature.description}</p>
             </div>
           ))}
         </div>
