@@ -1,6 +1,5 @@
 import React from 'react';
 import Image from 'next/image';
-import logo from '../assets/SurgeHealthLogo.webp';
 
 const Footer = () => {
   return (
@@ -8,7 +7,7 @@ const Footer = () => {
       <div className="max-w-[1000px] mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div>
-            <Image src={logo} alt="Surge Health" width={150} height={40} objectFit="contain" />
+            <Image src="/assets/SurgeHealthLogo.webp" alt="Surge Health" width={150} height={40} objectFit="contain" />
             <p className="text-sm text-gray-600 mt-2">contact@surge.health</p>
           </div>
           <div>

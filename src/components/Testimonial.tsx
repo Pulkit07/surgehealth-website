@@ -2,7 +2,6 @@ import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 
-import profileImage from '../assets/pulkit.webp';
 
 const Testimonial = () => {
   return (
@@ -34,7 +33,7 @@ const Testimonial = () => {
         <div className="md:w-1/2">
           <div className="relative w-full max-w-[300px] mx-auto aspect-square rounded-lg overflow-hidden bg-light-green">
             <Image
-              src={profileImage.src}
+              src='/assets/pulkit.webp'
               alt="Pulkit Goyal"
               layout="fill"
               objectFit="cover"

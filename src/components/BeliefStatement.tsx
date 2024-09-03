@@ -1,8 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
 
-// You'll need to add the actual image file to your project
-import meditationImage from '../assets/meditate.webp';
 
 const BeliefStatement = () => {
   return (
@@ -22,7 +20,7 @@ const BeliefStatement = () => {
         </div>
         <div className="md:w-1/2">
           <Image
-            src={meditationImage.src}
+            src="/assets/meditate.webp"
             alt="Person meditating"
             width={500}
             height={400}

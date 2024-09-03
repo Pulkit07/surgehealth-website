@@ -1,16 +1,15 @@
 import React from 'react';
 import Image from 'next/image';
-import logo from '../assets/SurgeHealthLogo.webp';
 
 const Header = () => {
   return (
     <header className="bg-white shadow-sm">
-      <div className="container mx-auto px-4 py-4 flex justify-between items-center">
+      <div className="container px-2  flex justify-between ">
         <Image 
-          src={logo} 
+          src="/assets/SurgeHealthLogo.webp"
           alt="Surge Health" 
-          width={200}  // Increased from 150
-          height={53}  // Increased proportionally
+          width={300}
+          height={100}  // Add an appropriate height
           objectFit="contain"
           priority
         />

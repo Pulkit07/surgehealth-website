@@ -1,15 +1,16 @@
 import React from 'react';
+import Image from 'next/image';
 
 const bodyViewItems = [
-  { icon: '💉', title: 'Blood Markers' },
-  { icon: '🚴', title: 'Exercise Habit' },
-  { icon: '💪', title: 'Physical Health' },
-  { icon: '😴', title: 'Sleeping Habits' },
-  { icon: '🧘', title: 'Stress Management' },
-  { icon: '🥗', title: 'Food Diet' },
-  { icon: '🧬', title: 'Body Composition' },
-  { icon: '🧬', title: 'Genetic Predisposition' },
-  { icon: '👥', title: 'Age Group' },
+  { icon: 'blood-drop', title: 'Blood Markers' },
+  { icon: 'bicycle', title: 'Exercise Habit' },
+  { icon: 'muscle', title: 'Physical Health' },
+  { icon: 'sleep', title: 'Sleeping Habits' },
+  { icon: 'meditation', title: 'Stress Management' },
+  { icon: 'food', title: 'Food Diet' },
+  { icon: 'bca', title: 'Body Composition' },
+  { icon: 'dna', title: 'Genetic Predisposition' },
+  { icon: 'age_group', title: 'Age Group' },
 ];
 
 const BodyView = () => {
@@ -22,7 +23,15 @@ const BodyView = () => {
         <div className="grid grid-cols-3 gap-4">
           {bodyViewItems.map((item, index) => (
             <div key={index} className="text-center p-4 border border-gray-200 rounded-lg">
-              <div className="text-4xl mb-2">{item.icon}</div>
+              <div className="mb-2 flex justify-center">
+                <Image
+                  src={`../assets/${item.icon}.svg`}
+                  alt={item.title}
+                  width={32}
+                  height={32}
+                  className='text-primary-green'
+                />
+              </div>
               <h3 className="text-[14px] font-medium text-gray-800">{item.title}</h3>
             </div>
           ))}
