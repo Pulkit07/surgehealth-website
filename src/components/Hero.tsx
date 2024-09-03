@@ -3,10 +3,10 @@ import Link from 'next/link';
 
 const Hero = () => {
   return (
-    <section className="bg-green-50 text-center py-16 px-4 sm:px-6 lg:px-8">
+    <section className="bg-green-50 text-center py-24 px-4 sm:px-6 lg:px-8">
       <div className="max-w-4xl mx-auto">
-        <p className="text-sm text-gray-600 mb-4">1 in 3 people die of heart attack, make sure you don&apos;t.</p>
-        <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-6 text-gray-800">
+        <p className="text-[22px] text-gray-600 mb-4">1 in 3 people die of heart attack, make sure you don&apos;t.</p>
+        <h1 className="text-[54px] sm:text-4xl md:text-5xl font-bold mb-6 text-gray-800">
           Manage Your <span className="text-green-600">Heart Attack Risks</span>
         </h1>
         <p className="text-base sm:text-lg mb-10 text-gray-700 max-w-2xl mx-auto">
